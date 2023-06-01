@@ -9,9 +9,13 @@ Prerequisites:
 Note: In this process, the text lines in the hkl file generated from the CrystFEL processing will be removed. Then the hkl files will be used to generate structure factor files.
 3. Refined dark.pdb and phases (ex: dark_phases.mtz). These files can be generated after 2.
 
-Step 1: Create a directoty named "dark". Keep the dark_start.hkl and copy the   
+Step 1: Create a directoty named "dark". Keep the dark_start.hkl and copy the dark.py to that directory.
+Execute the dark.py python program to generate FOBS_dark.
 
+Step 2: Create a directory named "light" and a subdirectory "hkl". Copy the light.py into the light directory.
+Execute the light.py python program to generate the FOBS_light (ex: FOBS_1ps).
 
+Step 3: Create a directory named "DED_maps"
 
  is a diff.py is a python program to generate difference electron density from light and dark datasets.
 The map calculation is based on k-weight parameter and according to the reference --Ren et al., 1999.
