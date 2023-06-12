@@ -16,9 +16,9 @@ Step 2: Create a directory named "light" and a subdirectory "hkl". Copy the ligh
 Execute the light.py python program to generate the FOBS_light (ex: FOBS_1ps).
 
 Step 3: Create a directory named "DED_maps". Copy the dark and light mtz files from step 1 and step2.
-In addition, copy the dark_phases.mtz. Execute the DED.py program to get the map.
+In addition, copy the dark_phases.mtz. Execute the DED_map.py program to get the map.
 
-DED.py is a python program to generate difference electron density from light and dark datasets.
+DED_map.py is a python program to generate difference electron density from light and dark datasets.
 The map calculation is based on k-weight parameter and according to the reference --Ren et al., 1999.
-
+This approach is similar to the Elin et al., 2020, Elife.
 
