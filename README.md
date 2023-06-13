@@ -14,10 +14,26 @@ Prerequisites:
 Note: In this process, the text lines in the hkl file generated from the CrystFEL processing will be removed. Then the hkl files will be used to generate structure factor files using the program dark.py or light.py.
 3. Refined dark.pdb and phases (ex: dark_phases.mtz). 
 
-Hands on commands and steps
+Hands on commands and explainination
+<<command-prompt>>$ git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX
+<<command-prompt>>$cd GameSFX                                    #Change directory to the GameSFX
+<<command-prompt>>$ls                                            #list the files and directory present
+DED_map  LICENSE  README.md  dark  dark_refine  light
+<<command-prompt>>$cd dark                                       #change directory to the dark folder
+<<command-prompt>>$ls                                            #list the files
+dark.py
+<<command-prompt>>$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL
+<<command-prompt>>$ls                                            #list the files
+dark.py
+dark_crystfel.hkl
+# edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor.
+<<command-prompt>>$
 
-git clone 
-
+  CrystFEL reflection list version 2.0
+Symmetry: mmm
+   h    k    l          I    phase   sigma(I)   nmeas
+  
+  
 Step 1: Create a directoty named "dark". Keep the dark_start.hkl and copy the dark.py to that directory.
 Execute the dark.py python program to generate FOBS_dark.
 
