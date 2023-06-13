@@ -51,14 +51,7 @@ dark_start.hkl
 <<command-prompt>>$./dark.py                                    #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. This will generate several files out of which FOBS_dark.mtz is the final file required to prepare DED map.
  
   
-Step 1: Create a directoty named "dark". Keep the dark_start.hkl and copy the dark.py to that directory.
-Execute the dark.py python program to generate FOBS_dark.
 
-Step 2: Create a directory named "light" and a subdirectory "hkl". Copy the light.py into the light directory.
-Execute the light.py python program to generate the FOBS_light (ex: FOBS_1ps).
-
-Step 3: Create a directory named "DED_maps". Copy the dark and light mtz files from step 1 and step2.
-In addition, copy the dark_phases.mtz. Execute the DED_map.py program to get the map.
 
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
 The map calculation is based on k-weight parameter and according to the reference --Ren et al., 1999.
