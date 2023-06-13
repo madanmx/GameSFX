@@ -43,7 +43,7 @@ dark_crystfel.hkl
   29    1    2      18.66        -      46.57       2
   End of reflections
   
- # In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl
+ In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl
 <<command-prompt>>$ls                                            #list the files
 dark.py
 dark_crystfel.hkl
