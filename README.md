@@ -18,37 +18,37 @@ command-prompt$ls                                            #list the files and
 DED_map  LICENSE  README.md  dark  dark_refine  light
 
 #### 2.Prepare Fo_dark.mtz
-command-prompt$cd dark                                       #change directory to the dark folder
-command-prompt$ls                                            #list the files
-dark.py
-command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL
-command-prompt$ls                                            #list the files
-dark.py
-dark_crystfel.hkl
-command-prompt$vi dark_crystfel.hkl # edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor.
-  CrystFEL reflection list version 2.0
-  Symmetry: mmm
-   h    k    l          I    phase   sigma(I)   nmeas  
-   0    0    4   30476.13        -   10561.76      15
-   0    0    5     -88.01        -      66.08      51
-   0    0    6    6769.51        -    1836.28      62
-   0    0    7      49.19        -      51.63      54
-  .
-  .
-  .
-  .
-  .
-  .
-  29    1    2      18.66        -      46.57       2
-  End of reflections
+command-prompt$cd dark                                       #change directory to the dark folder           \
+command-prompt$ls                                            #list the files                                \ 
+dark.py                                                                                                     \ 
+command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \
+command-prompt$ls                                            #list the files                                \
+dark.py                                                                                                     \ 
+dark_crystfel.hkl                                                                                           \ 
+command-prompt$vi dark_crystfel.hkl # edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
+  CrystFEL reflection list version 2.0                                \
+  Symmetry: mmm                                                       \
+   h    k    l          I    phase   sigma(I)   nmeas                 \
+   0    0    4   30476.13        -   10561.76      15                 \
+   0    0    5     -88.01        -      66.08      51                 \   
+   0    0    6    6769.51        -    1836.28      62                 \
+   0    0    7      49.19        -      51.63      54                 \
+  .                                                                   \
+  .                                                                   \
+  .                                                                   \
+  .                                                                   \
+  .                                                                   \
+  .                                                                   \
+  29    1    2      18.66        -      46.57       2                 \     
+  End of reflections                                                  \
   
-In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl
-command-prompt$ls                                            #list the files
-dark.py
-dark_crystfel.hkl
-dark_start.hkl
+In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl \
+command-prompt$ls                                            #list the files  \
+dark.py                                                                       \
+dark_crystfel.hkl                                                             \
+dark_start.hkl                                                                \
 command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which Fo_dark.mtz is the final file required to prepare DED map.
-After this go bact to the previous directory with the path /path/GameSFX
+After this go bact to the previous directory with the path /path/GameSFX 
 
 #### Quick dark structure refinement
 command-prompt$cd dark_refine              #change directory to the dark_refine
