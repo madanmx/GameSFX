@@ -6,7 +6,7 @@ The map calculation is based on --Ren et al., 1999, Biochem. and this approach i
 
 In this part we have three plus one python programs: \
 1.dark.py         #Prepare the structure factors from hkls. Fo_dark.mtz  \
-2.light.py        #Prepare the structure factors from hkls. Fo_imepoint.mtz (ex: Fo_1ps.mtz) \
+2.light.py        #Prepare the structure factors from hkls. Fo_timepoint.mtz (ex: Fo_1ps.mtz) \
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and dark_phases.mtz  files \
 4.DED_map.py      # Difference electron dentsity maps prepration using the files Fo_dark.mtz, Fo_timepoint.mtz, dark.pdb and phases.mtz
 
