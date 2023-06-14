@@ -57,6 +57,20 @@ command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this 
 #*************************Prepare Fobs_timepoint or Fobs_light.mtz**********************  
 command-prompt$cd light                            #change directory to light directory
 command-prompt$ls                                  #list the files and directory
+light.py
+command-prompt$mkdir hkl                           #make directory called hkl
+command-prompt$ls                                  #list the files and directory
+light.py
+hkl
+command-prompt$cd hkl                              #change directory to the hkl
+command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint/light hkl files to this folder (ex:1ps_crystfel.hkl)
+
+In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfrl.hkl file. Then save it as 1ps_start.hkl.
+command-prompt$ls                                 #list the files within the /hkl/ directory
+1ps_crystfel.hkl
+1ps_start.hkl
+#***********************End of Fobs_light.mtz********************************************
+
 
 
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
