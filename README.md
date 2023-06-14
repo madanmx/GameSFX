@@ -92,7 +92,7 @@ command-prompt$./light.py 1ps                      #Execute this command to prep
 #***********************End of Fobs_light.mtz********************************************
 #***********************DED map plotting********************************************
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
-Copy FOBS_dark.mtz, FOBS_1ps.mtz, dark.pdb and refine.mtz files.
+Copy FOBS_dark.mtz, FOBS_1ps.mtz, dark.pdb and refine.mtz files into DED_map directory.
 command-prompt$cd DED_map
-command-prompt$DED_map.py 1ps
+command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. 
 
