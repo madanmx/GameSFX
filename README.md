@@ -12,12 +12,12 @@ In this part we have three plus one python programs: \
 
 ### Hands on commands and explaination
 #### 1.Clone and browse the GameSFX
-command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX
-command-prompt$cd GameSFX                                    #Change directory to the GameSFX
-command-prompt$ls                                            #list the files and directory present
+command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX \
+command-prompt$cd GameSFX                                    #Change directory to the GameSFX               \
+command-prompt$ls                                            #list the files and directory present          \
 DED_map  LICENSE  README.md  dark  dark_refine  light
 
-#### 2.Prepare Fobs_dark.mtz
+#### 2.Prepare Fo_dark.mtz
 command-prompt$cd dark                                       #change directory to the dark folder
 command-prompt$ls                                            #list the files
 dark.py
@@ -47,7 +47,7 @@ command-prompt$ls                                            #list the files
 dark.py
 dark_crystfel.hkl
 dark_start.hkl
-command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which FOBS_dark.mtz is the final file required to prepare DED map.
+command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which Fo_dark.mtz is the final file required to prepare DED map.
 After this go bact to the previous directory with the path /path/GameSFX
 
 #### Quick dark structure refinement
@@ -56,12 +56,12 @@ command-prompt$ls                          #list the files and directory
 dark_refine.py
 Make sure you have all the relevant input files before executing this python code.
 1. dark_start.pdb
-2. FOBS_dark.mtz
+2. Fo_dark.mtz
 3. file.cif (ex:LBV.cif)
 copy above files to this directory and use ls to see all the files are there
 command-prompt$ls                          #list the files and directory
 dark_start.pdb
-FOBS_dark.mtz
+Fo_dark.mtz
 LBV.cif
 dark_refine.py
 command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the refine.mtz and dark.pdb file.
@@ -81,12 +81,12 @@ command-prompt$ls                                 #list the files within the /hk
 1ps_crystfel.hkl
 1ps_start.hkl
 command-prompt$cd ..                               #change directory to the light
-command-prompt$./light.py 1ps                      #Execute this command to prepare FOBS_1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX
+command-prompt$./light.py 1ps                      #Execute this command to prepare Fo_1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX
 
 #### 5.DED map plotting
 
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
-Copy FOBS_dark.mtz, FOBS_1ps.mtz, dark.pdb and refine.mtz files into DED_map directory.
+Copy Fo_dark.mtz, Fo_1ps.mtz, dark.pdb and refine.mtz files into DED_map directory.
 command-prompt$cd DED_map
 command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. 
 Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
