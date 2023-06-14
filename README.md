@@ -70,7 +70,7 @@ dark_start.pdb
 FOBS_dark.mtz
 LBV.cif
 dark_refine.py
-command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the refine.mtz file.
+command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the refine.mtz and dark.pdb file.
 ************************end of dark structure refinement******************************************
 
 #*************************Prepare Fobs_timepoint or Fobs_light.mtz**********************  
@@ -92,4 +92,7 @@ command-prompt$./light.py 1ps                      #Execute this command to prep
 #***********************End of Fobs_light.mtz********************************************
 #***********************DED map plotting********************************************
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
-command-prompt$cd 
+Copy FOBS_dark.mtz, FOBS_1ps.mtz, dark.pdb and refine.mtz files.
+command-prompt$cd DED_map
+command-prompt$DED_map.py 1ps
+
