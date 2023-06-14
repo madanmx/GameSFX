@@ -4,7 +4,7 @@ The map calculation is based on --Ren et al., 1999, Biochem. and this approach i
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 
-In this part we have three plus one python programs;
+In this part we have three plus one python programs:
 1.dark.py         #Prepare the structure factors from hkls. FOBS_dark.mtz, Note: The negative intensities will not included
 2.light.py        #Prepare the structure factors from hkls. FOBS_timepoint.mtz (ex: FOBS_1ps.mtz), Note: The negative intensities will not included
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and refine.mtz (phases) files
