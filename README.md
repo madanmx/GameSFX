@@ -10,12 +10,6 @@ In this part we have three plus one python programs: \
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and refine.mtz (phases) files \
 4.DED_map.py      # Difference electron dentsity maps prepration using the files FOBS_dark.mtz, FOBS_timepoint.mtz, dark.pdb and refine.mtz
 
-Prerequisites: 
-1. Make sure the shell enviornement can access the CCP4 program and python.
-2. Preprocessed hkl files (ex: dark_start.hkl and 1ps_start.hkl) for generating the structure factor files (ex: FOBS_dark.mtz and FOBS_1ps) 
-Note: In this process, the text lines in the hkl file generated from the CrystFEL processing will be removed. Then the hkl files will be used to generate structure factor files using the program dark.py or light.py.
-3. Refined dark.pdb and phases (ex: dark_phases.mtz). 
-
 ### Hands on commands and explaination
 #### 1.Clone and browse the GameSFX
 command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX
