@@ -1,12 +1,14 @@
 # GameSFX
 A set of python utilities for SFX dataset processing. The required tools are Python and CCP4i.
+The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the Elin et al., 2020, Elife.
+
 Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 
 In this part we have three plus one python programs;
-1.dark.py      #Prepare the structure factors from hkls. FOBS_dark.mtz, Note: The negative intensities will not included
-2.light.py     #Prepare the structure factors from hkls. FOBS_timepoint.mtz (ex: FOBS_1ps.mtz), Note: The negative intensities will not included
-3.dark_refine.py #Quick refine the dark structure to produce the dark.pdb and refine.mtz (phases) files
-4.DED_map.py     # Difference electron dentsity maps prepration using the files FOBS_dark.mtz, FOBS_timepoint.mtz, dark.pdb and refine.mtz
+1.dark.py         #Prepare the structure factors from hkls. FOBS_dark.mtz, Note: The negative intensities will not included
+2.light.py        #Prepare the structure factors from hkls. FOBS_timepoint.mtz (ex: FOBS_1ps.mtz), Note: The negative intensities will not included
+3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and refine.mtz (phases) files
+4.DED_map.py      # Difference electron dentsity maps prepration using the files FOBS_dark.mtz, FOBS_timepoint.mtz, dark.pdb and refine.mtz
 
 Prerequisites: 
 1. Make sure the shell enviornement can access the CCP4 program and python.
@@ -14,19 +16,21 @@ Prerequisites:
 Note: In this process, the text lines in the hkl file generated from the CrystFEL processing will be removed. Then the hkl files will be used to generate structure factor files using the program dark.py or light.py.
 3. Refined dark.pdb and phases (ex: dark_phases.mtz). 
 
-Hands on commands and explainination
-<<command-prompt>>$ git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX
-<<command-prompt>>$cd GameSFX                                    #Change directory to the GameSFX
-<<command-prompt>>$ls                                            #list the files and directory present
+Hands on commands and explaination
+command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX
+command-prompt$cd GameSFX                                    #Change directory to the GameSFX
+command-prompt$ls                                            #list the files and directory present
 DED_map  LICENSE  README.md  dark  dark_refine  light
-<<command-prompt>>$cd dark                                       #change directory to the dark folder
-<<command-prompt>>$ls                                            #list the files
+
+#*************************Prepare Fobs_dark.mtz**********************
+command-prompt$cd dark                                       #change directory to the dark folder
+command-prompt$ls                                            #list the files
 dark.py
-<<command-prompt>>$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL
-<<command-prompt>>$ls                                            #list the files
+command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL
+command-prompt$ls                                            #list the files
 dark.py
 dark_crystfel.hkl
-<<command-prompt>>$vi dark_crystfel.hkl # edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor.
+command-prompt$vi dark_crystfel.hkl # edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor.
   CrystFEL reflection list version 2.0
   Symmetry: mmm
    h    k    l          I    phase   sigma(I)   nmeas  
@@ -43,17 +47,17 @@ dark_crystfel.hkl
   29    1    2      18.66        -      46.57       2
   End of reflections
   
- In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl
-<<command-prompt>>$ls                                            #list the files
+In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl
+command-prompt$ls                                            #list the files
 dark.py
 dark_crystfel.hkl
 dark_start.hkl
-<<command-prompt>>$./dark.py                                    #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. This will generate several files out of which FOBS_dark.mtz is the final file required to prepare DED map.
- 
-  
+command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which FOBS_dark.mtz is the final file required to prepare DED map.
+#***********************End of Fobs_dark.mtz********************************************
+#*************************Prepare Fobs_timepoint or Fobs_light.mtz**********************  
+command-prompt$cd light                            #change directory to light directory
+command-prompt$ls                                  #list the files and directory
 
 
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
-The map calculation is based on k-weight parameter and according to the reference --Ren et al., 1999.
-This approach is similar to the Elin et al., 2020, Elife.
 
