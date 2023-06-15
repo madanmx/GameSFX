@@ -98,7 +98,7 @@ free_light = (
 subprocess.Popen(free_light, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
 
 cad_light = (
-     f"cad hklin1 FOBS_{timepoint}_free.mtz hklout FOBS_{timepoint}.mtz <<eof > cad_light.log \n"
+     f"cad hklin1 FOBS_{timepoint}_free.mtz hklout {timepoint}.mtz <<eof > cad_light.log \n"
      f"labi file 1 ALL \n"
      f"sort H K L \n"
      f"\nend\neof"
@@ -106,7 +106,7 @@ cad_light = (
 subprocess.Popen(cad_light, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
 
 
-print(f'The final timepoint mtz file, FOBS_{timepoint}.mtz is ready for difference electron density map') 
+print(f'The final FOBS_timepoint mtz file, {timepoint}.mtz is ready for difference electron density map') 
 
 
     
