@@ -66,7 +66,7 @@ LBV.cif                                                                         
 dark_refine.py                                                                     \ 
 command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file. \
 
-#### Prepare Fobs_timepoint or Fobs_light.mtz  
+#### Prepare timepoint.mtz  
 command-prompt$cd light                            #change directory to light directory \
 command-prompt$ls                                  #list the files and directory        \
 light.py                                                                                \  
@@ -85,8 +85,8 @@ command-prompt$./light.py 1ps                      #Execute this command to prep
 
 #### 5.DED map plotting
 
-DED_map.py is a python program to generate difference electron density from light and dark datasets.
-Copy dark.mtz, 1ps.mtz, dark.pdb and dark_phases.mtz files into DED_map directory.
-command-prompt$cd DED_map
-command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. 
+DED_map.py is a python program to generate difference electron density from light and dark datasets. \
+Copy dark.mtz, 1ps.mtz, dark.pdb and dark_phases.mtz files into DED_map directory.                   \
+command-prompt$cd DED_map                                                                            \
+command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. \
 Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
