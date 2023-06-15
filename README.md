@@ -51,37 +51,37 @@ command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this 
 After this go bact to the previous directory with the path /path/GameSFX 
 
 #### Quick dark structure refinement
-command-prompt$cd dark_refine              #change directory to the dark_refine
-command-prompt$ls                          #list the files and directory
+command-prompt$cd dark_refine              #change directory to the dark_refine   \
+command-prompt$ls                          #list the files and directory          \
 dark_refine.py
-Make sure you have all the relevant input files before executing this python code.
-1. dark_start.pdb
+Make sure you have all the relevant input files before executing this python code. \
+1. dark_start.pdb                                                                  
 2. dark.mtz
 3. file.cif (ex:LBV.cif)
-copy above files to this directory and use ls to see all the files are there
-command-prompt$ls                          #list the files and directory
-dark_start.pdb
-dark.mtz
-LBV.cif
-dark_refine.py
-command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file.
+copy above files to this directory and use ls to see all the files are there       \
+command-prompt$ls                          #list the files and directory           \
+dark_start.pdb                                                                     \
+dark.mtz                                                                           \
+LBV.cif                                                                            \   
+dark_refine.py                                                                     \ 
+command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file. \
 
 #### Prepare Fobs_timepoint or Fobs_light.mtz  
-command-prompt$cd light                            #change directory to light directory
-command-prompt$ls                                  #list the files and directory
-light.py
-command-prompt$mkdir hkl                           #make directory called hkl
-command-prompt$ls                                  #list the files and directory
-light.py
-hkl
-command-prompt$cd hkl                              #change directory to the hkl
-command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint/light hkl files to this folder (ex:1ps_crystfel.hkl)
-In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfrl.hkl file. Then save it as 1ps_start.hkl.
-command-prompt$ls                                 #list the files within the /hkl/ directory
-1ps_crystfel.hkl
-1ps_start.hkl
-command-prompt$cd ..                               #change directory to the light
-command-prompt$./light.py 1ps                      #Execute this command to prepare 1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX
+command-prompt$cd light                            #change directory to light directory \
+command-prompt$ls                                  #list the files and directory        \
+light.py                                                                                \  
+command-prompt$mkdir hkl                           #make directory called hkl           \
+command-prompt$ls                                  #list the files and directory        \
+light.py                                                                                \
+hkl                                                                                     \
+command-prompt$cd hkl                              #change directory to the hkl         \
+command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint/light hkl files to this folder (ex:1ps_crystfel.hkl)  \
+In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfrl.hkl file. Then save it as 1ps_start.hkl.                                 \
+command-prompt$ls                                 #list the files within the /hkl/ directory                                                    \  
+1ps_crystfel.hkl                                                                                                                                \  
+1ps_start.hkl                                                                                                                                   \          
+command-prompt$cd ..                               #change directory to the light                                                               \
+command-prompt$./light.py 1ps                      #Execute this command to prepare 1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX 
 
 #### 5.DED map plotting
 
