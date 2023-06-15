@@ -5,10 +5,10 @@ The map calculation is based on --Ren et al., 1999, Biochem. and this approach i
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 
 In this part we have three plus one python programs: \
-1.dark.py         #Prepare the structure factors from hkls. Fo_dark.mtz  \
-2.light.py        #Prepare the structure factors from hkls. Fo_timepoint.mtz (ex: Fo_1ps.mtz) \
+1.dark.py         #Prepare the structure factors from hkl dark.mtz  \
+2.light.py        #Prepare the structure factors from hkls. timepoint.mtz (ex: 1ps.mtz) \
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and dark_phases.mtz  files \
-4.DED_map.py      # Difference electron dentsity maps prepration using the files Fo_dark.mtz, Fo_timepoint.mtz, dark.pdb and phases.mtz
+4.DED_map.py      # Difference electron dentsity maps prepration using the files dark.mtz, timepoint.mtz, dark.pdb and dark_phases.mtz
 
 ### Hands on commands and explaination
 #### 1.Clone and browse the GameSFX
