@@ -1,6 +1,6 @@
 # GameSFX
 A set of python utilities for SFX dataset processing. The required tools are Python and CCP4i.
-The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the Elin et al., 2020, Elife.
+The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife.
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 
@@ -17,7 +17,7 @@ command-prompt$cd GameSFX                                    #Change directory t
 command-prompt$ls                                            #list the files and directory present          \
 DED_map  LICENSE  README.md  dark  dark_refine  light
 
-#### 2.Prepare Fo_dark.mtz
+#### 2.Prepare dark.mtz
 command-prompt$cd dark                                       #change directory to the dark folder           \
 command-prompt$ls                                            #list the files                                \ 
 dark.py                                                                                                     \ 
@@ -47,7 +47,7 @@ command-prompt$ls                                            #list the files  \
 dark.py                                                                       \
 dark_crystfel.hkl                                                             \
 dark_start.hkl                                                                \
-command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which Fo_dark.mtz is the final file required to prepare DED map.
+command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which dark.mtz is the final file required to prepare DED map.
 After this go bact to the previous directory with the path /path/GameSFX 
 
 #### Quick dark structure refinement
@@ -56,15 +56,15 @@ command-prompt$ls                          #list the files and directory
 dark_refine.py
 Make sure you have all the relevant input files before executing this python code.
 1. dark_start.pdb
-2. Fo_dark.mtz
+2. dark.mtz
 3. file.cif (ex:LBV.cif)
 copy above files to this directory and use ls to see all the files are there
 command-prompt$ls                          #list the files and directory
 dark_start.pdb
-Fo_dark.mtz
+dark.mtz
 LBV.cif
 dark_refine.py
-command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the refine.mtz and dark.pdb file.
+command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file.
 
 #### Prepare Fobs_timepoint or Fobs_light.mtz  
 command-prompt$cd light                            #change directory to light directory
@@ -81,12 +81,12 @@ command-prompt$ls                                 #list the files within the /hk
 1ps_crystfel.hkl
 1ps_start.hkl
 command-prompt$cd ..                               #change directory to the light
-command-prompt$./light.py 1ps                      #Execute this command to prepare Fo_1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX
+command-prompt$./light.py 1ps                      #Execute this command to prepare 1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX
 
 #### 5.DED map plotting
 
 DED_map.py is a python program to generate difference electron density from light and dark datasets.
-Copy Fo_dark.mtz, Fo_1ps.mtz, dark.pdb and refine.mtz files into DED_map directory.
+Copy dark.mtz, 1ps.mtz, dark.pdb and dark_phases.mtz files into DED_map directory.
 command-prompt$cd DED_map
 command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. 
 Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
