@@ -30,10 +30,10 @@ print(f'You entered {timepoint} for the generating DED map')
 
 #Set the files and make sure they are in the same older where the DED_maps exists!!
 #*****************************************************************
-dark_model = "dark.pdb"     #Set the dark.pdb here
-OFF = "dark.mtz"            #Set the dark reflections here   
-F_model = "refine.mtz"      #Set the refined dark phases here  
-ON = "timepoint.mtz"        #Set the light reflections here   
+dark_model = "dark.pdb"          #Set the dark.pdb here
+OFF = "dark.mtz"                 #Set the dark reflections here   
+F_model = "dark_phases.mtz"      #Set the refined dark phases here  
+ON = "timepoint.mtz"             #Set the light reflections here   
 #*****************************************************************
 
 a = input("Enter the cell parameter a = \n")
