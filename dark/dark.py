@@ -93,9 +93,9 @@ subprocess.Popen(f"freerflag HKLIN FOBS_dark_tru.mtz HKLOUT FOBS_dark_free.mtz <
 os.remove(free_dark)
 
 
-cad_dark = "cad hklin1 FOBS_dark_free.mtz hklout FOBS_dark.mtz <<eof > cad_dark \n labi file 1 ALL \n sort H K L \n \nend\neof"
+cad_dark = "cad hklin1 FOBS_dark_free.mtz hklout dark.mtz <<eof > cad_dark \n labi file 1 ALL \n sort H K L \n \nend\neof"
 subprocess.Popen(cad_dark,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
 
-print(f'The final dark mtz file, FOBS_dark.mtz is ready for refinement and difference electron density map') 
+print(f'The final FOBS_dark mtz file, dark.mtz is ready for refinement and difference electron density map') 
 
