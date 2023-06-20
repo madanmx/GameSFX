@@ -5,10 +5,10 @@ The map calculation is based on --Ren et al., 1999, Biochem. and this approach i
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 
 In this part we have three plus one python programs: \
-1.dark.py         #Prepare the structure factors from hkl dark.mtz  \
-2.light.py        #Prepare the structure factors from hkls. timepoint.mtz (ex: 1ps.mtz) \
+1.dark.py         #Prepare the structure factors from hkl i.e., dark.mtz  \
+2.light.py        #Prepare the structure factors from hkl i.e., timepoint.mtz (ex: 1ps.mtz) \
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and dark_phases.mtz  files \
-4.DED_map.py      # Difference electron dentsity maps prepration using the files dark.mtz, timepoint.mtz, dark.pdb and dark_phases.mtz
+4.DED_map.py      #Difference electron dentsity maps prepration using the files; dark.mtz, timepoint.mtz, dark.pdb and dark_phases.mtz
 
 ### Hands on commands and explaination
 #### 1.Clone and browse the GameSFX
@@ -25,7 +25,7 @@ command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl 
 command-prompt$ls                                            #list the files                                \
 dark.py                                                                                                     \ 
 dark_crystfel.hkl                                                                                           \ 
-command-prompt$vi dark_crystfel.hkl # edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
+command-prompt$vi dark_crystfel.hkl                          #edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
   CrystFEL reflection list version 2.0                                \
   Symmetry: mmm                                                       \
    h    k    l          I    phase   sigma(I)   nmeas                 \
@@ -48,7 +48,7 @@ dark.py                                                                       \
 dark_crystfel.hkl                                                             \
 dark_start.hkl                                                                \
 command-prompt$./dark.py  #After preparing the dark_start.hkl file execute this command and the relevant details prompted by this code. The details include No. of residues, cell parameters, space group, resolution,... This will generate several files out of which dark.mtz is the final file required to prepare DED map.
-After this go bact to the previous directory with the path /path/GameSFX 
+After this go back to the previous directory with the path /path/GameSFX 
 
 #### Quick dark structure refinement
 command-prompt$cd dark_refine              #change directory to the dark_refine   \
@@ -65,6 +65,14 @@ dark.mtz                                                                        
 LBV.cif                                                                            \   
 dark_refine.py                                                                     \ 
 command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file. \
+command-prompt$ls                          #list the files and directory
+dark_start.pdb                                                                     \
+dark.mtz                                                                           \
+LBV.cif                                                                            \   
+dark_refine.py                                                                     \
+dark.pdb                                                                           \
+dark_phases.mtz                                                                    \
+After this go back to the previous directory with the path /path/GameSFX           \ 
 
 #### Prepare timepoint.mtz  
 command-prompt$cd light                            #change directory to light directory \
@@ -75,12 +83,12 @@ command-prompt$ls                                  #list the files and directory
 light.py                                                                                \
 hkl                                                                                     \
 command-prompt$cd hkl                              #change directory to the hkl         \
-command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint/light hkl files to this folder (ex:1ps_crystfel.hkl)  \
+command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint.hkl files to this folder (ex:1ps_crystfel.hkl)  \
 In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfrl.hkl file. Then save it as 1ps_start.hkl.                                 \
 command-prompt$ls                                 #list the files within the /hkl/ directory                                                    \  
 1ps_crystfel.hkl                                                                                                                                \  
 1ps_start.hkl                                                                                                                                   \          
-command-prompt$cd ..                               #change directory to the light                                                               \
+command-prompt$cd ..                               #change directory to the /light/                                                               \
 command-prompt$./light.py 1ps                      #Execute this command to prepare 1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX 
 
 #### 5.DED map plotting
