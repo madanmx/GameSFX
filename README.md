@@ -15,7 +15,12 @@ In this part we have three plus one python programs: \
 command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX \
 command-prompt$cd GameSFX                                    #Change directory to the GameSFX               \
 command-prompt$ls                                            #list the files and directory present          \
-DED_map  LICENSE  README.md  dark  dark_refine  light
+DED_map                                                                                                     \  
+LICENSE                                                                                                      \
+README.md                                                                                                    \
+dark                                                                                                         \ 
+dark_refine                                                                                                  \
+light                                                                                                        \
 
 #### 2.Prepare dark.mtz
 command-prompt$cd dark                                       #change directory to the dark folder           \
