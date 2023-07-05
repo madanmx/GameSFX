@@ -31,6 +31,7 @@ command-prompt$ls                                            #list the files    
 dark.py                                                                                                     \ 
 dark_crystfel.hkl                                                                                           \ 
 command-prompt$vi dark_crystfel.hkl                          #edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
+
   CrystFEL reflection list version 2.0                                \
   Symmetry: mmm                                                       \
    h    k    l          I    phase   sigma(I)   nmeas                 \
