@@ -15,7 +15,7 @@ In this part we have three plus one python programs: \
 command-prompt$git clone git@github.com:madanmx/GameSFX.git #This creates a directory with the name GameSFX \
 command-prompt$cd GameSFX                                    #Change directory to the GameSFX               \
 command-prompt$ls                                            #list the files and directory present          \
-DED_map                                                                                                       
+DED_map                                                                                                     \
 LICENSE                                                                                                      \
 README.md                                                                                                    \
 dark                                                                                                         \ 
@@ -28,8 +28,8 @@ command-prompt$ls                                            #list the files    
 dark.py                                                                                                      \
 command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \ 
 command-prompt$ls                                            #list the files                                \
-dark.py                                                                                                     \ 
-dark_crystfel.hkl                                                                                           \
+dark.py            
+dark_crystfel.hkl  
 command-prompt$vi dark_crystfel.hkl                          #edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
 
   CrystFEL reflection list version 2.0                                \
