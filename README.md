@@ -24,7 +24,7 @@ light                                                                           
 
 #### 2.Prepare dark.mtz
 command-prompt$cd dark                                       #change directory to the dark folder           \
-command-prompt$ls                                            #list the files                                \ 
+command-prompt$ls                                            #list the files                                \
 dark.py                                                                                                     \ 
 command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \
 command-prompt$ls                                            #list the files                                \
