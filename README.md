@@ -26,7 +26,8 @@ light                                                                           
 command-prompt$cd dark                                       #change directory to the dark folder           \
 command-prompt$ls                                            #list the files                                \
 dark.py                                                                                                      \
-command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \ 
+command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL 
+\
 command-prompt$ls                                            #list the files                                \
 dark.py            
 dark_crystfel.hkl  
