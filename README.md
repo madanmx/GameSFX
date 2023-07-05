@@ -26,10 +26,10 @@ light                                                                           
 command-prompt$cd dark                                       #change directory to the dark folder           \
 command-prompt$ls                                            #list the files                                \
 dark.py                                                                                                      \
-command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \
+command-prompt$cp /path/dark_crystfel.hkl .                  #copy the dark hkl file directly outout from crystFEL \ 
 command-prompt$ls                                            #list the files                                \
 dark.py                                                                                                     \ 
-dark_crystfel.hkl                                                                                           \ 
+dark_crystfel.hkl                                                                                           \
 command-prompt$vi dark_crystfel.hkl                          #edit the dark_crystfel.hkl using any editor. Here for example I will use vi editor. \
 
   CrystFEL reflection list version 2.0                                \
