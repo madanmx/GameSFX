@@ -1,0 +1,579 @@
+# Bond, angle, and torsion values were taken from the optimized geometry calcula# ted at the B3LYP/6-31G* level of theory with Gaussian16.
+# We use nomenclature of Buergi et al. 
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LBV        LBV 'Unknown                  ' ligand 78 43 .
+#
+data_comp_LBV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+LBV         C01    C   C2    .         -4.7482   -6.6357   -4.4407
+LBV         C02    C   C1    .         -3.8248   -5.6220   -4.5778
+LBV         C03    C   CR5   .         -3.5481   -4.6898   -3.4210
+LBV         C04    C   CR5   .         -3.7823   -3.3217   -3.3811
+LBV         C05    C   CH3   .         -4.3584   -2.4931   -4.4843
+LBV         C06    C   CR5   .         -3.3738   -2.8736   -2.1141
+LBV         C07    C   C1    .         -3.4328   -1.5504   -1.6421
+LBV         C08    C   CR5   .         -2.9394   -1.2131   -0.2201
+LBV         N09    N   NR15  .         -1.7287   -0.6779    0.0934
+LBV         C10    C   CR5   .         -1.6276   -0.5120    1.4348
+LBV         C11    C   C1    .         -0.5107    0.0186    2.1161
+LBV         C12    C   CR5   .          0.7223    0.4580    1.3369
+LBV         N13    N   NR15  .          0.7836    1.5081    0.4884
+LBV         C14    C   CR5   .          2.0338    1.6027   -0.0232
+LBV         C15    C   C1    .          2.5112    2.6546   -1.0206
+LBV         C16    C   CR5   .          3.3561    3.6859   -0.5982
+LBV         N17    N   NR15  .          3.9398    3.7418    0.6793
+LBV         C18    C   CR5   .          5.0406    4.7511    0.6037
+LBV         O19    O   O     .          5.7636    5.0774    1.5412
+LBV         C20    C   CR15  .          5.1254    5.3295   -0.8261
+LBV         C21    C   CH3   .          4.8315    6.7884   -0.7600
+LBV         C22    C   CR5   .          4.0170    4.6150   -1.4572
+LBV         C23    C   C1    .          3.7488    4.7010   -2.8098
+LBV         C24    C   CH3   .          4.8549    4.9585   -3.7802
+LBV         C25    C   CR5   .          2.8117    0.5731    0.5150
+LBV         C26    C   CH3   .          4.2534    0.3120    0.2149
+LBV         C27    C   CR5   .          1.9821   -0.1519    1.3768
+LBV         C28    C   CH2   .          2.3614   -1.3589    2.1947
+LBV         C29    C   CH2   .          3.0394   -1.1180    3.5326
+LBV         C30    C   C     .          3.7100   -2.2957    4.2032
+LBV         O31    O   O     .          4.3329   -3.1486    3.5087
+LBV         O32    O   OC    .          3.6478   -2.4274    5.4578
+LBV         C33    C   CR5   .         -2.8252   -0.9568    2.0143
+LBV         C34    C   CH2   .         -3.1744   -0.9664    3.4966
+LBV         C35    C   CH2   .         -4.1106    0.1028    4.0046
+LBV         C36    C   C     .         -4.8763   -0.1845    5.2513
+LBV         O37    O   O     .         -4.3489    0.0168    6.3721
+LBV         O38    O   OC    .         -6.0469   -0.6256    5.1797
+LBV         C39    C   CR5   .         -3.6509   -1.3997    0.9669
+LBV         C40    C   CH3   .         -5.0258   -1.9615    1.1001
+LBV         N41    N   NR15  .         -2.9141   -3.9271   -1.4198
+LBV         C42    C   CR5   .         -3.0072   -5.0402   -2.1858
+LBV         O43    O   O     .         -2.6731   -6.1634   -1.8502
+LBV        H091    H   HNR5  .         -1.0802   -0.4633   -0.5122
+LBV        H131    H   HNR5  .          0.0940    2.0638    0.2924
+LBV        H411    H   HNR5  .         -2.5926   -3.8999   -0.5743
+LBV        H011    H   H     .         -5.2251   -6.7481   -3.6023
+LBV        H012    H   H     .         -4.9271   -7.2348   -5.1861
+LBV        H021    H   H     .         -3.3543   -5.5047   -5.4190
+LBV        H051    H   HCH3  .         -4.8729   -1.7672   -4.1081
+LBV        H052    H   HCH3  .         -3.6360   -2.1303   -5.0294
+LBV        H053    H   HCH3  .         -4.9421   -3.0504   -5.0436
+LBV        H071    H   H     .         -3.7911   -0.8498   -2.2020
+LBV        H111    H   H     .         -0.5301    0.1176    3.0847
+LBV        H151    H   H     .          2.2128    2.6119   -1.9402
+LBV        H171    H   HNR5  .          3.6803    3.2857    1.4103
+LBV        H201    H   HCR5  .          6.0687    5.2313   -1.0393
+LBV        H211    H   HCH3  .          5.0087    7.1151    0.1381
+LBV        H212    H   HCH3  .          5.3974    7.2618   -1.3943
+LBV        H213    H   HCH3  .          3.8966    6.9418   -0.9820
+LBV        H231    H   H     .          2.9089    4.3857   -3.1423
+LBV        H241    H   HCH3  .          4.5711    4.6900   -4.6767
+LBV        H242    H   HCH3  .          5.0723    5.9017   -3.7792
+LBV        H243    H   HCH3  .          5.6362    4.4468   -3.5220
+LBV        H261    H   HCH3  .          4.4194    0.4655   -0.7325
+LBV        H262    H   HCH3  .          4.4774   -0.6136    0.4360
+LBV        H263    H   HCH3  .          4.8062    0.9126    0.7407
+LBV        H281    H   HCH2  .          1.5553   -1.8718    2.3609
+LBV        H282    H   HCH2  .          2.9594   -1.9100    1.6533
+LBV        H291    H   HCH2  .          2.3710   -0.7715    4.1442
+LBV        H292    H   HCH2  .          3.7140   -0.4275    3.4028
+LBV        H341    H   HCH2  .         -3.5724   -1.8292    3.7011
+LBV        H342    H   HCH2  .         -2.3448   -0.8946    4.0012
+LBV        H351    H   HCH2  .         -4.7492    0.2925    3.3037
+LBV        H352    H   HCH2  .         -3.5863    0.9080    4.1579
+LBV        H401    H   HCH3  .         -5.5419   -1.4130    1.7240
+LBV        H402    H   HCH3  .         -5.4665   -1.9639    0.2307
+LBV        H403    H   HCH3  .         -4.9720   -2.8686    1.4369
+#
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+LBV   C02     C01   double        1.344 0.020
+LBV   C03     C02   single        1.449 0.020
+LBV   C04     C03   aromatic      1.367 0.020
+LBV   C05     C04   single        1.498 0.020
+LBV   C06     C04   aromatic      1.471 0.020
+LBV   C08     C07   aromatic        1.435 0.020
+LBV   N09     C08   aromatic      1.372 0.020
+LBV   C10     N09   aromatic      1.392 0.020
+LBV   C12     C11   aromatic        1.394 0.020
+LBV   N13     C12   aromatic      1.399 0.020
+LBV   C14     N13   aromatic      1.380 0.020
+LBV   C16     C15   double        1.367 0.020
+LBV   N17     C16   single        1.392 0.020
+LBV   C18     N17   single        1.377 0.020
+LBV   O19     C18   double        1.227 0.020
+LBV   C20     C18   single        1.524 0.020
+LBV   C21     C20   single        1.545 0.020
+LBV   C22     C20   single        1.526 0.020
+LBV   C23     C22   double        1.345 0.020
+LBV   C24     C23   single        1.496 0.020
+LBV   C15     C14   single        1.428 0.020
+LBV   C25     C14   aromatic      1.419 0.020
+LBV   C26     C25   single        1.496 0.020
+LBV   C27     C25   aromatic      1.398 0.020
+LBV   C28     C27   single        1.500 0.011
+LBV   C29     C28   single        1.518 0.015
+LBV   C30     C29   single        1.519 0.012
+LBV   O31     C30   deloc         1.247 0.019
+LBV   O32     C30   deloc         1.247 0.019
+LBV   C11     C10   aromatic      1.391 0.020
+LBV   C33     C10   aromatic      1.430 0.020
+LBV   C35     C34   single        1.518 0.015
+LBV   C36     C35   single        1.519 0.012
+LBV   O37     C36   deloc         1.247 0.019
+LBV   O38     C36   deloc         1.247 0.019
+LBV   C34     C33   single        1.500 0.011
+LBV   C39     C33   aromatic      1.396 0.020
+LBV   C40     C39   single        1.502 0.020
+LBV   C07     C06   aromatic        1.368 0.020
+LBV   N41     C06   aromatic      1.381 0.020
+LBV   C42     N41   aromatic      1.402 0.020
+LBV   O43     C42   double        1.214 0.020
+LBV   C03     C42   aromatic      1.502 0.020
+LBV   C08     C39   aromatic      1.428 0.020
+LBV   C12     C27   aromatic      1.427 0.020
+LBV   C16     C22   single        1.475 0.020
+LBV  H091     N09   single        0.913 0.020
+LBV  H131     N13   single        0.907 0.020
+LBV  H411     N41   single        0.905 0.020
+LBV  H011     C01   single        0.971 0.020
+LBV  H012     C01   single        0.973 0.020
+LBV  H021     C02   single        0.971 0.020
+LBV  H051     C05   single        0.966 0.020
+LBV  H052     C05   single        0.975 0.020
+LBV  H053     C05   single        0.982 0.020
+LBV  H071     C07   single        0.966 0.020
+LBV  H111     C11   single        0.974 0.020
+LBV  H151     C15   single        0.968 0.020
+LBV  H171     N17   single        0.900 0.020
+LBV  H201     C20   single        0.972 0.020
+LBV  H211     C21   single        0.972 0.020
+LBV  H212     C21   single        0.973 0.020
+LBV  H213     C21   single        0.973 0.020
+LBV  H231     C23   single        0.957 0.020
+LBV  H241     C24   single        0.978 0.020
+LBV  H242     C24   single        0.968 0.020
+LBV  H243     C24   single        0.969 0.020
+LBV  H261     C26   single        0.974 0.020
+LBV  H262     C26   single        0.978 0.020
+LBV  H263     C26   single        0.971 0.020
+LBV  H281     C28   single        0.970 0.020
+LBV  H282     C28   single        0.977 0.020
+LBV  H291     C29   single        0.970 0.020
+LBV  H292     C29   single        0.974 0.020
+LBV  H341     C34   single        0.972 0.020
+LBV  H342     C34   single        0.974 0.020
+LBV  H351     C35   single        0.967 0.020
+LBV  H352     C35   single        0.973 0.020
+LBV  H401     C40   single        0.978 0.020
+LBV  H402     C40   single        0.975 0.020
+LBV  H403     C40   single        0.969 0.020
+#
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+LBV  H012     C01    H011         119.99 3.000
+LBV  H012     C01     C02         119.99 3.000
+LBV  H011     C01     C02         120.01 3.000
+LBV  H021     C02     C03         119.99 3.000
+LBV  H021     C02     C01         119.99 3.000
+LBV   C03     C02     C01         125.35 3.000
+LBV   C42     C03     C04         107.73 3.000
+LBV   C42     C03     C02         123.99 3.000
+LBV   C04     C03     C02         128.288 3.000
+LBV   C06     C04     C05         122.72 3.000
+LBV   C06     C04     C03         108.83 3.000
+LBV   C05     C04     C03         128.44 3.000
+LBV  H053     C05    H052         109.47 3.000
+LBV  H053     C05    H051         109.37 3.000
+LBV  H052     C05    H051         109.44 3.000
+LBV  H053     C05     C04         109.56 3.000
+LBV  H052     C05     C04         109.46 3.000
+LBV  H051     C05     C04         109.53 3.000
+LBV   N41     C06     C07         128.21 3.000
+LBV   N41     C06     C04         106.68 3.000
+LBV   C07     C06     C04         125.07 3.000
+LBV  H071     C07     C08         119.63 3.000
+LBV  H071     C07     C06         120.25 3.000
+LBV   C08     C07     C06         129.49 3.000
+LBV   C39     C08     N09         107.79 3.000
+LBV   C39     C08     C07         133.25 3.000
+LBV   N09     C08     C07         118.80 3.000
+LBV  H091     N09     C10         125.08 3.000
+LBV  H091     N09     C08         124.88 3.000
+LBV   C10     N09     C08         110.18 3.000
+LBV   C33     C10     C11         126.53 3.000
+LBV   C33     C10     N09         106.56 3.000
+LBV   C11     C10     N09         127.22 3.000
+LBV  H111     C11     C12         119.71 3.000
+LBV  H111     C11     C10         120.16 3.000
+LBV   C12     C11     C10         131.73 3.000
+LBV   C27     C12     N13         106.74 3.000
+LBV   C27     C12     C11         127.58 3.000
+LBV   N13     C12     C11         125.62 3.000
+LBV  H131     N13     C14         125.27 3.000
+LBV  H131     N13     C12         125.26 3.000
+LBV   C14     N13     C12         109.58 3.000
+LBV   C25     C14     C15         127.47 3.000
+LBV   C25     C14     N13         107.85 3.000
+LBV   C15     C14     N13         124.67 3.000
+LBV  H151     C15     C16         120.39 3.000
+LBV  H151     C15     C14         119.62 3.000
+LBV   C16     C15     C14         126.80 3.000
+LBV   C22     C16     N17         106.63 3.000
+LBV   C22     C16     C15         129.59 3.000
+LBV   N17     C16     C15         123.79 3.000
+LBV  H171     N17     C18         126.54 3.000
+LBV  H171     N17     C16         126.76 3.000
+LBV   C18     N17     C16         114.24 3.000
+LBV   C20     C18     O19         128.06 3.000
+LBV   C20     C18     N17         108.00 3.000
+LBV   O19     C18     N17         123.89 3.000
+LBV  H201     C20     C22         126.28 3.000
+LBV  H201     C20     C21         107.46 3.000
+LBV  H201     C20     C18         102.62 3.000
+LBV   C22     C20     C21         115.50 3.000
+LBV   C22     C20     C18         102.94 3.000
+LBV   C21     C20     C18         109.26 3.000
+LBV  H213     C21    H212         109.48 3.000
+LBV  H213     C21    H211         109.45 3.000
+LBV  H212     C21    H211         109.44 3.000
+LBV  H213     C21     C20         109.50 3.000
+LBV  H212     C21     C20         109.44 3.000
+LBV  H211     C21     C20         109.52 3.000
+LBV   C23     C22     C20         127.41 3.000
+LBV   C23     C22     C16         124.60 3.000
+LBV   C20     C22     C16         107.88 3.000
+LBV  H231     C23     C24         118.76 3.000
+LBV  H231     C23     C22         119.34 3.000
+LBV   C24     C23     C22         160.00 3.000
+LBV  H243     C24    H242         109.46 3.000
+LBV  H243     C24    H241         109.46 3.000
+LBV  H242     C24    H241         109.49 3.000
+LBV  H243     C24     C23         109.45 3.000
+LBV  H242     C24     C23         109.49 3.000
+LBV  H241     C24     C23         109.47 3.000
+LBV   C27     C25     C26         127.63 3.000
+LBV   C27     C25     C14         107.71 3.000
+LBV   C26     C25     C14         124.63 3.000
+LBV  H263     C26    H262         109.43 3.000
+LBV  H263     C26    H261         109.40 3.000
+LBV  H262     C26    H261         109.28 3.000
+LBV  H263     C26     C25         109.40 3.000
+LBV  H262     C26     C25         109.93 3.000
+LBV  H261     C26     C25         109.39 3.000
+LBV   C28     C27     C25         126.62 3.000
+LBV   C28     C27     C12         125.33 3.000
+LBV   C25     C27     C12         107.99 3.000
+LBV  H282     C28    H281         107.79 3.000
+LBV  H282     C28     C29         107.72 3.000
+LBV  H281     C28     C29         107.69 3.000
+LBV  H282     C28     C27         107.77 3.000
+LBV  H281     C28     C27         107.90 3.000
+LBV   C29     C28     C27         114.10 3.000
+LBV  H292     C29    H291         107.94 3.000
+LBV  H292     C29     C30         107.70 3.000
+LBV  H291     C29     C30         107.71 3.000
+LBV  H292     C29     C28         107.71 3.000
+LBV  H291     C29     C28         107.72 3.000
+LBV   C30     C29     C28         112.6  3.000
+LBV   O32     C30     O31         119.98 3.000
+LBV   O32     C30     C29         119.99 3.000
+LBV   O31     C30     C29         120.02 3.000
+LBV   C39     C33     C34         126.26 3.000
+LBV   C39     C33     C10         108.17 3.000
+LBV   C34     C33     C10         125.55 3.000
+LBV  H342     C34    H341         107.77 3.000
+LBV  H342     C34     C35         107.57 3.000
+LBV  H341     C34     C35         107.70 3.000
+LBV  H342     C34     C33         107.97 3.000
+LBV  H341     C34     C33         107.72 3.000
+LBV   C35     C34     C33         114.10 3.000
+LBV  H352     C35    H351         107.92 3.000
+LBV  H352     C35     C36         107.73 3.000
+LBV  H351     C35     C36         107.74 3.000
+LBV  H352     C35     C34         107.76 3.000
+LBV  H351     C35     C34         107.74 3.000
+LBV   C36     C35     C34         112.60 3.000
+LBV   O38     C36     O37         120.00 3.000
+LBV   O38     C36     C35         119.99 3.000
+LBV   O37     C36     C35         120.00 3.000
+LBV   C40     C39     C33         125.46 3.000
+LBV   C40     C39     C08         127.03 3.000
+LBV   C33     C39     C08         107.29 3.000
+LBV  H403     C40    H402         109.44 3.000
+LBV  H403     C40    H401         109.42 3.000
+LBV  H402     C40    H401         109.38 3.000
+LBV  H403     C40     C39         109.42 3.000
+LBV  H402     C40     C39         109.76 3.000
+LBV  H401     C40     C39         109.41 3.000
+LBV  H411     N41     C42         125.28 3.000
+LBV  H411     N41     C06         125.52 3.000
+LBV   C42     N41     C06         111.43 3.000
+LBV   O43     C42     N41         124.19 3.000
+LBV   O43     C42     C03         130.60 3.000
+LBV   N41     C42     C03         105.22 3.000
+#
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+LBV CONST_01       N41     C06     C04     C03          -0.0   0.0 0
+LBV CONST_02       C42     N41     C06     C04           0.0   0.0 0
+LBV CONST_03       C03     C42     N41     C06          -0.0   0.0 0
+LBV CONST_04       C04     C03     C42     N41          -0.0   0.0 0
+LBV CONST_05       C06     C04     C03     C42           0.0   0.0 0
+LBV CONST_06       C33     C10     N09     C08          -0.0   0.0 0
+LBV CONST_07       C39     C33     C10     N09           0.0   0.0 0
+LBV CONST_08       C08     C39     C33     C10          -0.0   0.0 0
+LBV CONST_09       N09     C08     C39     C33           0.0   0.0 0
+LBV CONST_10       C10     N09     C08     C39           0.0   0.0 0
+LBV CONST_11       C25     C14     N13     C12           0.0   0.0 0
+LBV CONST_12       C27     C25     C14     N13          -0.0   0.0 0
+LBV CONST_13       C12     C27     C25     C14           0.0   0.0 0
+LBV CONST_14       N13     C12     C27     C25          -0.0   0.0 0
+LBV CONST_15       C14     N13     C12     C27          -0.00   0.0 0
+LBV CONST_16       C20     C18     N17     C16          -0.00   0.0 0
+LBV CONST_17       C06     C04     C03     C02        -180.   0.0 0
+LBV CONST_18       N41     C42     C03     C02         180.   0.0 0
+LBV CONST_19       C07     C06     C04     C03        -180.  0.0 0
+LBV CONST_20       O43     C42     C03     C04         179.98   0.0 0
+LBV CONST_21       C42     C03     C04     C05         179.95   0.0 0
+LBV CONST_22       N41     C06     C04     C05        -179.96   0.0 0
+LBV CONST_23       O43     C42     N41     C06         179.99   0.0 0
+LBV CONST_24       C10     N09     C08     C07         180.00   0.0 0
+LBV CONST_25       C33     C39     C08     C07        -179.93   0.0 0
+LBV CONST_26       C42     N41     C06     C07         179.98   0.0 0
+LBV CONST_27       C11     C10     N09     C08        -179.96   0.0 0
+LBV CONST_28       C34     C33     C39     C08        -179.92   0.0 0
+LBV CONST_29       C40     C39     C08     N09         179.99   0.0 0
+LBV CONST_30       C34     C33     C10     N09         179.95   0.0 0
+LBV CONST_31       C40     C39     C33     C10         179.95   0.0 0
+LBV CONST_32       C14     N13     C12     C11         179.93   0.0 0
+LBV CONST_33       C25     C27     C12     C11        -179.95   0.0 0
+LBV CONST_34       C39     C33     C10     C11         179.96   0.0 0
+LBV CONST_35       C15     C14     N13     C12         179.92   0.0 0
+LBV CONST_36       C26     C25     C27     C12        -179.95   0.0 0
+LBV CONST_37       C28     C27     C12     N13         180.00   0.0 0
+LBV CONST_38       C26     C25     C14     N13         179.95   0.0 0
+LBV CONST_39       C28     C27     C25     C14        -179.98   0.0 0
+LBV CONST_40       C27     C25     C14     C15        -179.94   0.0 0
+LBV CONST_41       O19     C18     N17     C16         179.08   0.0 0
+LBV CONST_42      H411     N41     C42     C03         179.99   0.0 0
+LBV CONST_43      H411     N41     C06     C04        -179.97   0.0 0
+LBV CONST_44      H131     N13     C14     C25         179.99   0.0 0
+LBV CONST_45      H131     N13     C12     C27        -179.97   0.0 0
+LBV CONST_46      H091     N09     C10     C33         179.95   0.0 0
+LBV CONST_47      H091     N09     C08     C39        -179.99   0.0 0
+LBV CONST_48      H171     N17     C18     C20        -178.14   0.0 0
+LBV CONST_49      H171     N17     C18     O19           1.43   0.0 0
+LBV Var_01         C18     C20     C22     C16          -5.39  30.0 1
+LBV Var_02         C20     C22     C16     N17           5.63  30.0 1
+LBV Var_03         C22     C20     C18     N17          -3.65  30.0 1
+LBV Var_04         C22     C16     N17     C18          -0.83  30.0 1
+LBV Var_05         C04     C06     C07     C08     -30.0  30.0 2
+LBV Var_06         N41     C06     C07     C08     -195     30.0 2
+LBV Var_07         C06     C07     C08     N09     -158.0  30.0 2
+LBV Var_08         C06     C07     C08     C39      30.0  30.0 2
+LBV Var_09         C12     C11     C10     N09           0.0  30.0 2
+LBV Var_10         N13     C12     C11     C10           0.0  30.0 2
+LBV Var_11         C27     C12     C11     C10         180.0  30.0 2
+LBV Var_12         C33     C10     C11     C12         180.0  30.0 2
+LBV Var_13         C16     C15     C14     N13            0.  30.0 2
+LBV Var_14         N17     C16     C15     C14            0.  30.0 2
+LBV Var_15         C22     C16     C15     C14         180.0  30.0 2
+LBV Var_16         C18     N17     C16     C15         180.0  30.0 2
+LBV Var_17         C20     C22     C16     C15        -180.0  30.0 1
+LBV Var_18         C25     C14     C15     C16        -180.0  30.0 2
+LBV Var_19         C21     C20     C22     C16        -113.6  30.0 1
+LBV Var_20         C23     C22     C16     N17        -170.77  30.0 1
+LBV Var_21         C21     C20     C18     N17        -119.94  30.0 1
+LBV Var_22         C23     C22     C20     C18        -173.96  30.0 1
+LBV Var_23         C22     C20     C18     O19         170.88  30.0 1
+LBV Var_24        H201     C20     C22     C16         111.82  30.0 1
+LBV Var_25        H201     C20     C18     N17        -129.44  30.0 1
+LBV Var_26        H171     N17     C16     C22         176.81  30.0 1
+LBV Var_27         C04     C03     C02     C01        -180.0  30.0 2
+LBV Var_28         C42     C03     C02     C01          0.0   30.0 2
+LBV Var_29         C35     C34     C33     C10          180.0   30.0 3
+LBV Var_30         C29     C28     C27     C12          180.0  15.0 3
+LBV Var_31         C23     C22     C16     C15           9.5  30.0 1
+LBV Var_32         C24     C23     C22     C16        180.0  30.0 2
+LBV Var_33         C21     C20     C18     O19         57.44  30.0 1
+LBV Var_34         C24     C23     C22     C20          0.0  30.0 2
+LBV Var_35         C23     C22     C20     C21         -70.15   30.0 1
+LBV Var_36         C29     C28     C27     C25          180.0  30.0 3
+LBV Var_37         C39     C33     C34     C35          180.0  30.0 3
+LBV Var_38        H051     C05     C04     C03         147.83  30.0 2
+LBV Var_39        H052     C05     C04     C03         -92.19  30.0 2
+LBV Var_40        H053     C05     C04     C03          27.86  30.0 2
+LBV Var_41        H021     C02     C03     C04          63.28  30.0 2
+LBV Var_42        H071     C07     C06     C04           0.86  30.0 2
+LBV Var_43        H051     C05     C04     C06         -32.28  30.0 2
+LBV Var_44        H052     C05     C04     C06          87.71  30.0 2
+LBV Var_45        H053     C05     C04     C06        -152.25  30.0 2
+LBV Var_46        H401     C40     C39     C08        -135.28  30.0 2
+LBV Var_47        H402     C40     C39     C08         -15.26  30.0 2
+LBV Var_48        H403     C40     C39     C08         104.85  30.0 2
+LBV Var_49        H071     C07     C08     N09         -81.04  30.0 2
+LBV Var_50        H111     C11     C10     N09         178.88  30.0 2
+LBV Var_51        H341     C34     C33     C10        -134.63  30.0 2
+LBV Var_52        H342     C34     C33     C10         -18.49  30.0 2
+LBV Var_53        H281     C28     C27     C12          25.24  30.0 2
+LBV Var_54        H282     C28     C27     C12         141.39  30.0 2
+LBV Var_55        H111     C11     C12     N13        -111.42  30.0 2
+LBV Var_56        H151     C15     C14     N13         -72.06  30.0 3
+LBV Var_57        H261     C26     C25     C14         -39.29  30.0 2
+LBV Var_58        H262     C26     C25     C14        -159.28  30.0 2
+LBV Var_59        H263     C26     C25     C14          80.53  30.0 2
+LBV Var_60        H171     N17     C16     C15         -17.85  30.0 1
+LBV Var_61        H231     C23     C22     C16          22.83  30.0 2
+LBV Var_62        H151     C15     C16     N17        -173.29  30.0 2
+LBV Var_63        H211     C21     C20     C18          22.82  30.0 3
+LBV Var_64        H212     C21     C20     C18         142.78  30.0 3
+LBV Var_65        H213     C21     C20     C18         -97.21  30.0 3
+LBV Var_66        H201     C20     C18     O19          50.99  30.0 1
+LBV Var_67        H231     C23     C22     C20        -166.03  30.0 2
+LBV Var_68        H211     C21     C20     C22         131.47  30.0 3
+LBV Var_69        H212     C21     C20     C22        -108.57  30.0 3
+LBV Var_70        H213     C21     C20     C22          11.44  30.0 3
+LBV Var_71        H151     C15     C16     C22         -10.32  30.0 2
+LBV Var_72        H201     C20     C22     C23         -60.02  30.0 1
+LBV Var_73        H151     C15     C14     C25         107.82  30.0 3
+LBV Var_74        H281     C28     C27     C25        -154.73  30.0 2
+LBV Var_75        H282     C28     C27     C25         -38.58  30.0 2
+LBV Var_76        H261     C26     C25     C27         140.70  30.0 2
+LBV Var_77        H262     C26     C25     C27          20.70  30.0 2
+LBV Var_78        H263     C26     C25     C27         -99.48  30.0 2
+LBV Var_79        H111     C11     C12     C27          68.49  30.0 2
+LBV Var_80        H111     C11     C10     C33          -0.95  30.0 2
+LBV Var_81        H401     C40     C39     C33          44.69  30.0 2
+LBV Var_82        H402     C40     C39     C33         164.71  30.0 2
+LBV Var_83        H403     C40     C39     C33         -75.18  30.0 2
+LBV Var_84        H341     C34     C33     C39          45.19  30.0 2
+LBV Var_85        H342     C34     C33     C39         161.33  30.0 2
+LBV Var_86        H071     C07     C08     C39          98.89  30.0 2
+LBV Var_87        H071     C07     C06     N41        -179.07  30.0 2
+LBV Var_88        H021     C02     C03     C42        -116.72  30.0 2
+LBV Var_89         C30     C29     C28     C27         180.0   15.0 3
+LBV Var_90         C36     C35     C34     C33         156.11  30.0 2
+LBV Var_91        H011     C01     C02     C03           0.35  30.0 2
+LBV Var_92        H012     C01     C02     C03         179.91  30.0 2
+LBV Var_93        H241     C24     C23     C22         160.70  30.0 3
+LBV Var_94        H242     C24     C23     C22         -79.27  30.0 3
+LBV Var_95        H243     C24     C23     C22          40.72  30.0 3
+LBV Var_96        H291     C29     C28     C27          72.17  30.0 1
+LBV Var_97        H292     C29     C28     C27         -44.03  30.0 1
+LBV Var_98        H351     C35     C34     C33          34.22  30.0 2
+LBV Var_99        H352     C35     C34     C33         -81.99  30.0 2
+LBV Var_100        O31     C30     C29     C28          0.0  30.0 2
+LBV Var_101        O32     C30     C29     C28          0.0  30.0 2
+LBV Var_102        O37     C36     C35     C34          84.15  30.0 2
+LBV Var_103        O38     C36     C35     C34         -95.93  30.0 2
+LBV Var_104       H281     C28     C29     C30          72.00  30.0 3
+LBV Var_105       H282     C28     C29     C30         -44.01  30.0 3
+LBV Var_106       H291     C29     C30     O31         159.96  30.0 3
+LBV Var_107       H292     C29     C30     O31         -83.85  30.0 3
+LBV Var_108       H291     C29     C30     O32         -20.05  30.0 3
+LBV Var_109       H292     C29     C30     O32          96.14  30.0 3
+LBV Var_110       H341     C34     C35     C36          34.19  30.0 3
+LBV Var_111       H342     C34     C35     C36         -81.73  30.0 3
+LBV Var_112       H351     C35     C36     O37        -153.96  30.0 3
+LBV Var_113       H352     C35     C36     O37         -37.76  30.0 3
+LBV Var_114       H351     C35     C36     O38          25.96  30.0 3
+LBV Var_115       H352     C35     C36     O38         142.16  30.0 3
+#
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+LBV chir_01   C20     C18     C21     C22   both
+#
+#
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+LBV plan-1    C02 0.020
+LBV plan-1    C03 0.020
+LBV plan-1    C04 0.020
+LBV plan-1    C05 0.020
+LBV plan-1    C06 0.020
+LBV plan-1    C07 0.020
+LBV plan-1    N41 0.020
+LBV plan-1    C42 0.020
+LBV plan-1    O43 0.020
+LBV plan-1   H411 0.020
+LBV plan-2    C07 0.020
+LBV plan-2    C08 0.020
+LBV plan-2    N09 0.020
+LBV plan-2    C10 0.020
+LBV plan-2    C11 0.020
+LBV plan-2    C33 0.020
+LBV plan-2    C34 0.020
+LBV plan-2    C39 0.020
+LBV plan-2    C40 0.020
+LBV plan-2   H091 0.020
+LBV plan-3    C11 0.020
+LBV plan-3    C12 0.020
+LBV plan-3    N13 0.020
+LBV plan-3    C14 0.020
+LBV plan-3    C15 0.020
+LBV plan-3    C25 0.020
+LBV plan-3    C26 0.020
+LBV plan-3    C27 0.020
+LBV plan-3    C28 0.020
+LBV plan-3   H131 0.020
+LBV plan-4    C15 0.020
+LBV plan-4    C16 0.020
+LBV plan-4    N17 0.020
+LBV plan-4    C18 0.020
+LBV plan-4    O19 0.020
+LBV plan-4    C20 0.020
+LBV plan-4    C23 0.020
+LBV plan-4   H171 0.020
+LBV plan-5    C29 0.020
+LBV plan-5    C30 0.020
+LBV plan-5    O31 0.020
+LBV plan-5    O32 0.020
+LBV plan-6    C35 0.020
+LBV plan-6    C36 0.020
+LBV plan-6    O37 0.020
+LBV plan-6    O38 0.020
