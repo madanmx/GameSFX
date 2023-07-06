@@ -49,7 +49,7 @@ command-prompt$vi dark_crystfel.hkl                          #edit the dark_crys
   29    1    2      18.66        -      46.57       2                 \     
   End of reflections                                                  \
   
-In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl \
+In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl. NOTE: Make sure there is empty line in the starting of the file for example the first line should start with the  0    0    4   30476.13        -   10561.76      15 in the above example  \
 command-prompt$ls                                            #list the files  \
 dark.py                                                                       \
 dark_crystfel.hkl                                                             \
