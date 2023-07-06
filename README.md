@@ -94,7 +94,7 @@ command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed 
 In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfel.hkl file. Then save it as 1ps.hkl.                                 \
 command-prompt$ls                                 #list the files within the /hkl/ directory                                                    \  
 1ps_crystfel.hkl                                                                                                                                \  
-1ps_start.hkl                                  
+1ps.hkl                                  
 NOTE: After the above step, remove the 1ps_crystfel.hkl and keep only the 1ps_start.hkl file. 
 command-prompt$cd ..                               #change directory to the /light/                                                               \
 command-prompt$./light.py 1ps                      #Execute this command to prepare 1ps.mtz ignore/view the other files. After this go bact to the previous directory with the path /path/GameSFX 
