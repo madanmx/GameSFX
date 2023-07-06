@@ -91,7 +91,7 @@ light.py                                                                        
 hkl                                                                                     \
 command-prompt$cd hkl                              #change directory to the hkl         \
 command-prompt$cp /path/timepoint_crystfel.hkl .   #copy the crystfel processed timepoint.hkl files to this folder (ex:1ps_crystfel.hkl)  \
-In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfrl.hkl file. Then save it as 1ps_start.hkl.                                 \
+In the editor preprocess the 1ps_crystfel.hkl similar to dark_crystfel.hkl file. Then save it as 1ps.hkl.                                 \
 command-prompt$ls                                 #list the files within the /hkl/ directory                                                    \  
 1ps_crystfel.hkl                                                                                                                                \  
 1ps_start.hkl                                  
