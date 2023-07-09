@@ -73,6 +73,7 @@ LBV.cif                                                                         
 dark_refine.py                                                                     \ 
 command-prompt$./dark_refine.py            #Start the dark structure refinement to generate the dark_phases.mtz and dark.pdb file. \
 This will asks to names of pdb and cif file (ex: enter dark if it is dark.pdb and LBV if it is LBV.cif) \
+Also enter the maximum and minimum resolution                                     \
 command-prompt$ls                          #list the files and directory
 dark_start.pdb                                                                     \
 dark.mtz                                                                           \
