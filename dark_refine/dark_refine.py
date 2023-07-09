@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 #############################################################
-#							     #	 
+#							                                #	 
 #                                                           #
 #  (c) 2023 Madan Kumar Shankar <madan.shankar@kemi.uu.se>  #
-#   Version Monday 12th June 2023 15:00 CEST                #  
-#           Monday 12th June 2023 19:00 IST                 #
+#   Version Sunday 9th July 2023 23:00 CEST                 #  
+#           Monday 10th July 2023 02:30 IST                 #
 #############################################################
 
 
