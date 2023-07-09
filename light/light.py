@@ -75,7 +75,7 @@ subprocess.Popen(sort_light, shell=True, stdout=subprocess.PIPE, stderr=subproce
 
 
 trunc_light = (
-    f"truncate hklin IOBS_sort.mtz hklout FOBS_{timepoint}.mtz <<eof > tru_light.log \n"
+    f"truncate hklin IOBS_sort.mtz hklout FOBS_{timepoint}_tru.mtz <<eof > tru_light.log \n"
     f"title truncate light intensities \n"
     f"truncate no \n"
     f"wilson all \n"
@@ -91,7 +91,7 @@ subprocess.Popen(trunc_light, shell=True, stdout=subprocess.PIPE, stderr=subproc
 
 
 free_light = (
-    f"freerflag HKLIN FOBS_{timepoint}_tru.mtz HKLOUT FOBS_light_free.mtz << eof > free_light.log \n"
+    f"freerflag HKLIN FOBS_{timepoint}_tru.mtz HKLOUT FOBS_{timepoint}_free.mtz << eof > free_light.log \n"
     f"freerfrac 0.05 \n"
     f"end\neof"
 )
@@ -108,44 +108,4 @@ subprocess.Popen(cad_light, shell=True, stdout=subprocess.PIPE, stderr=subproces
 
 print(f'The final FOBS_timepoint mtz file, {timepoint}.mtz is ready for difference electron density map') 
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
