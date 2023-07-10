@@ -52,7 +52,7 @@ print(f'The maximum resolution and minimum resolution for DED maps are {max_res}
 
 mtzv = (
     f"mtz2various HKLIN ../{F_model} HKLOUT model_phs.hkl <<eof > mtz2various.log\n"
-    f"LABIN FP=FC_ALL PHIC=PHIC \n"
+    f"LABIN FP=FC_ALL PHIC=PHIC_DARK \n"
     f"OUTPUT USER '(3I5,F12.3,' 1.00 ',F12.3)'\n"
     f"END"
     )
@@ -307,62 +307,4 @@ mapmask = (
     f"END"
     )
 subprocess.Popen(mapmask,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
