@@ -106,6 +106,6 @@ cad_light = (
 subprocess.Popen(cad_light, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()
 
 
-print(f'The final FOBS_timepoint mtz file, {timepoint}.mtz is ready for difference electron density map') 
+print(f'The final timepoint mtz file, {timepoint}.mtz is ready for difference electron density map') 
 
     
