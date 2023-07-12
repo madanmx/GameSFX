@@ -1,5 +1,5 @@
 # GameSFX
-A set of python utilities for SFX dataset processing. The required tools are Python, editors (whatever the editor you like!!) and CCP4i. For map visualization "coot". 
+A set of python utilities for SFX dataset processing. The required tools are Python, editors (whatever the editor you like!!) and CCP4. For map visualization "coot". 
 
 Take home message: Less mousing more keyboarding!!!
 
