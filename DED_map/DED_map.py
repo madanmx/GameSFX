@@ -264,11 +264,11 @@ for IH,K,L,F1,SIGF1 in f1:
 DFDW= DFDW / IO
 fout.close()
 
-print(f' NUMBER OF HKL IN FILE1             : {light:10d}')
-print(f' NUMBER OF HKL IN FILE2             : {dark:10d}')
-print(f' NUMBER OF PHASES IN FILE3          : {phase:10d}')
-print(f' NUMBER OF MATCHING HKL             : {IC:10d}')
-print(f' NUMBER OF DIFFERENCE-F WRITTEN OUT : {IO:10d}')
+print(f' NUMBER OF HKL IN Light_scaled                : {light:10d}')
+print(f' NUMBER OF HKL IN Dark_scaled                 : {dark:10d}')
+print(f' NUMBER OF PHASES IN Phases                   : {phase:10d}')
+print(f' NUMBER OF MATCHING HKL                       : {IC:10d}')
+print(f' NUMBER OF DIFFERENCE-F WRITTEN OUT           : {IO:10d}')
 print(f' MEAN AMPLITUDE DIFFERENCE                      :  {DFM:14.4f}')
 print(f' MEAN AMPLITUDE DIFFERENCE/<WEIGHT>          (M):  {DFDW:14.4f}')
 print(f' MEAN AMPLITUDE DIFFERENCE SQUARED              :  {DFM**2:14.4e}')
