@@ -1,7 +1,7 @@
 # GameSFX
-A set of python utilities for SFX dataset processing. The required tools are Python, editors (whatever the editor you like!!) and CCP4. For map visualization "coot". 
+A set of python utilities for serial femtosecond crystallography data analysis. The required tools are Python, editors (whatever the editor you like!!) and CCP4. For map visualization "coot". 
 
-Take home message: Less mousing more keyboarding!!!
+Take home message: Classical computing with less mousing more keyboarding!!!
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021 \
