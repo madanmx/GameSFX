@@ -4,7 +4,7 @@ A set of python utilities for SFX dataset processing. The required tools are Pyt
 Take home message: Less mousing more keyboarding!!!
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
-The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021\
+The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021 \
 
 ### Install GameSFX
 git clone git@github.com:madanmx/GameSFX.git \
