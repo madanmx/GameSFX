@@ -186,9 +186,9 @@ f3['PHASE']= np.where( f3['PHASE'] < -180.0 , f3['PHASE'] + 360.0, f3['PHASE'] )
 FDARK[offset+f3['IH'], offset+f3['IK'], offset+f3['IL'], 2] = f3['PHASE']
 FDARK[offset+f2['IH'], offset+f2['K' ], offset+f2['L' ], 0] = f2['F1']
 FDARK[offset+f2['IH'], offset+f2['K' ], offset+f2['L' ], 1] = f2['SIGMA']
-I1= len(f1)
-IP= len(f3)
-I2= len(f2)
+light= len(f1)
+phase= len(f3)
+dark = len(f2)
 # Matching HKLs from light_scaled.hkl to dark_scaled.hkl.
 IC=    0
 DFSQ=  0.0
@@ -264,9 +264,9 @@ for IH,K,L,F1,SIGF1 in f1:
 DFDW= DFDW / IO
 fout.close()
 
-print(f' NUMBER OF HKL IN FILE1             : {I1:10d}')
-print(f' NUMBER OF HKL IN FILE2             : {I2:10d}')
-print(f' NUMBER OF PHASES IN FILE3          : {IP:10d}')
+print(f' NUMBER OF HKL IN FILE1             : {light:10d}')
+print(f' NUMBER OF HKL IN FILE2             : {dark:10d}')
+print(f' NUMBER OF PHASES IN FILE3          : {phase:10d}')
 print(f' NUMBER OF MATCHING HKL             : {IC:10d}')
 print(f' NUMBER OF DIFFERENCE-F WRITTEN OUT : {IO:10d}')
 print(f' MEAN AMPLITUDE DIFFERENCE                      :  {DFM:14.4f}')
