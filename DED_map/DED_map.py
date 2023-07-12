@@ -84,6 +84,8 @@ subprocess.Popen(cad_DED, shell=True, stdout=subprocess.PIPE, stderr=subprocess.
 # Scaling:scale the things
 # 1 scale dark to FC dark
 # 2 scale light to dark
+print(f'Scaling Dark to FC dark')
+
 
 scale1 = (
    f"scaleit HKLIN all.mtz HKLOUT all_sc1.mtz << eof >scaleit1.log \n"
@@ -98,6 +100,8 @@ scale1 = (
    f"END"
    )
 subprocess.Popen(scale1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).wait()  
+
+print(f'Scaling Light to Dark')
 
 scale2 = (
    f"scaleit HKLIN all_sc1.mtz HKLOUT all_sc2.mtz << eof >scaleit2.log \n"
@@ -164,6 +168,9 @@ m2v_phase = (
     )
 subprocess.Popen(m2v_phase,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
+print(f'Difference structure factors calculation')
+print(f'h k l DF weight Phase')
+
 # Difference structure factors calculation
 # h k l DF weight Phase
 #########################DED.py###################################
@@ -182,7 +189,7 @@ FDARK[offset+f2['IH'], offset+f2['K' ], offset+f2['L' ], 1] = f2['SIGMA']
 I1= len(f1)
 IP= len(f3)
 I2= len(f2)
-# Matching HKLs from FILE 1 to FILE 2.
+# Matching HKLs from light_scaled.hkl to dark_scaled.hkl.
 IC=    0
 DFSQ=  0.0
 S12SQ= 0.0
@@ -251,7 +258,7 @@ for IH,K,L,F1,SIGF1 in f1:
       if (PHASE > 180.0):
          PHASE= PHASE - 360.0
 
-    #WRITE(12,5600) IH,K,L,DF/WMEAN,W,PHASE
+    
     fout.write(f'{IH:5d}{K:5d}{L:5d}{DF/WMEAN:10.4f}{W:10.4f}{PHASE:10.4f}\n')
 
 DFDW= DFDW / IO
@@ -274,7 +281,7 @@ print(f' MEAN SQUARE SIGMA OF DIFFERENCE AMPLITUDES  (M):  {S12SQM:14.4f}')
 print(f' AVERAGE WEIGHT                              (M):  {WMEAN:14.4f}')
 print(f' AVERAGE Z WEIGHT                            (Z):  {WZMEAN:14.4f}')
 ####################################################################################################################################
-
+print(f'Difference structure factors calculation ended and now the DED map calculation starts...')
 
 f2m_weight = (
     f"f2mtz HKLIN light_dark.phs HKLOUT {timepoint}_dwt.mtz << EOF > f2m_weight \n"
@@ -285,9 +292,6 @@ f2m_weight = (
     f"END"
     )
 subprocess.Popen(f2m_weight,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
-
-
-#54.980 116.690 117.860 90 90 90
 
 fft_weight = (
     f"fft HKLIN {timepoint}_dwt.mtz MAPOUT {timepoint}_wd.map << eof > fft_weight.log \n "
@@ -307,4 +311,8 @@ mapmask = (
     f"END"
     )
 subprocess.Popen(mapmask,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
+
+print(f'Now the DED map: {timepoint}.map, ready!!!')
+
+
 
