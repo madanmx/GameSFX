@@ -97,5 +97,5 @@ cad_dark = "cad hklin1 FOBS_dark_free.mtz hklout dark.mtz <<eof > cad_dark \n la
 subprocess.Popen(cad_dark,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
 
-print(f'The final FOBS_dark mtz file, dark.mtz is ready for refinement and difference electron density map') 
+print(f'The final dark.mtz is ready for refinement and difference electron density map') 
 
