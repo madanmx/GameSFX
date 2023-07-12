@@ -115,6 +115,10 @@ command-prompt$cd DED_map                                                       
 command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. \
 Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
 
+
+# Many programs for the SFX data (Part 2, Part 3....)
+Work in Progess!!
+
 # License
 The programs in GameSFX are published under the GNU General Public License v3.0. Please do take responsibility to install all the relevant pacakges (CCP4 and coot) to work with the GameSFX.
 
@@ -122,3 +126,4 @@ The programs in GameSFX are published under the GNU General Public License v3.0.
 Madan Kumar Shankar - madan.shankar@kemi.uu.se
 Department of Chemistry BMC-Biochemistry
 Uppsala University
+
