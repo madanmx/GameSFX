@@ -7,7 +7,7 @@ Take home message: Less mousing more keyboarding!!!
 The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021\
 
 ### Install GameSFX
-git clone git clone git@github.com:madanmx/GameSFX.git \
+git clone git@github.com:madanmx/GameSFX.git \
 or                                                     \
 click on 'Code', then click on 'Download ZIP"          \
 
