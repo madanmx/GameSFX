@@ -1,10 +1,17 @@
 # GameSFX
-A set of python utilities for SFX dataset processing. The required tools are Python and CCP4i.
-The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife.
+A set of python utilities for SFX dataset processing. The required tools are Python, editors (whatever you lcike!!) and CCP4i. For map visualization "coot". 
+
+Take home message: Less mousing more keyboarding!!!
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
+The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021\
 
-In this part we have three plus one python programs: \
+### Install GameSFX
+git clone git clone git@github.com:madanmx/GameSFX.git \
+or                                                     \
+click on 'Code', then click on 'Download ZIP"          \
+
+In this part 1 we have three plus one python programs: \
 1.dark.py         #Prepare the structure factors from hkl i.e., dark.mtz  \
 2.light.py        #Prepare the structure factors from hkl i.e., timepoint.mtz (ex: 1ps.mtz) \
 3.dark_refine.py  #Quick refine the dark structure to produce the dark.pdb and dark_phases.mtz  files \
@@ -106,4 +113,10 @@ DED_map.py is a python program to generate difference electron density from ligh
 Copy dark.mtz, 1ps.mtz, dark.pdb and dark_phases.mtz files into DED_map directory.                   \
 command-prompt$cd DED_map                                                                            \
 command-prompt$DED_map.py 1ps     #Enter all the values required by this code to generate a 1ps directory. The 1ps.map (DED map) and other relevant files will be found in this directory. \
-Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
+Open the coot, load the dark.pdb and 1ps.map to see the difference electron density 
+
+
+
+
+
+features.
