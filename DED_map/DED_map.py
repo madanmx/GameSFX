@@ -10,15 +10,24 @@
 # the idea published here:                                  #
 # https://doi.org/10.1038/s41592-019-0628-z                 #
 #############################################################
-# This program calculates the 
-#      i. Difference structure factors
-#     ii. Weights (W)
-# The difference structure factors are calculated using:
-# MEAN SQUARE (Not SQUARED MEAN) 
-# 
-
-
-
+# This program calculates the                               #
+#      i. Difference structure factors                      # 
+#     ii. Weights (W)                                       #
+# The difference structure factors are calculated using:    #
+# MEAN SQUARE (Not SQUARED MEAN)                            # 
+## W =              1                                       #
+#      ----------------------------                         #
+#            F**2     SIG(F)**2                             #
+#       1 + ------ + -----------                            #
+#           <F**2>   <SIG(F)**2>                            #
+# In this program, The MEAN of SQUARES/MEAN SQUARES will be # 
+# used rather SQUARE of the MEAN of the ABSOLUTE values     # 
+# (ex. <|F|**2>                                             # 
+# Structure factors will bw normalized by the mean weight   #
+# to preserve absolute scale of a weighted map.             #
+# Electron density of unweighted maps calculated by the     #
+# output of this program has to be divided by the           #    
+# mean weight to be on absolute scale                       # 
 #############################################################
 
 import sys
@@ -31,7 +40,7 @@ from math import sqrt
 #       Files to keep in the same directory:
 #       1. dark.mtz                       # COLUMNS H,K,L,F,SIGF required
 #       2. light.mtz (ex:1ps, 500fs, 3ps) # COLUMNS H,K,L,F,SIGF required 
-#       3. dark.pdb                       #
+#       3. dark.pdb                       # To run FFT
 #       4. refine.mtz                     # PHASES from the 6th coloumn will be used for FFT 
 #       where the DEDmap.py is copied.
 #      ./DEDmap.py timepoint
