@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #############################################################
-#							     #	 
+#							                                #	 
 #                                                           #
 #  (c) 2023 Madan Kumar Shankar <madan.shankar@kemi.uu.se>  #
 #   Version Thursday 10th June 2023 15:00 CEST              #  
@@ -10,8 +10,16 @@
 # the idea published here:                                  #
 # https://doi.org/10.1038/s41592-019-0628-z                 #
 #############################################################
+# This program calculates the 
+#      i. Difference structure factors
+#     ii. Weights (W)
+# The difference structure factors are calculated using:
+# MEAN SQUARE (Not SQUARED MEAN) 
+# 
 
 
+
+#############################################################
 
 import sys
 import os
@@ -21,10 +29,10 @@ from math import sqrt
 
 #USAGE: Keep the dark.mtz and light.mtz/set of light.mtz file in the same directory 
 #       Files to keep in the same directory:
-#       1. dark.mtz
-#       2. light.mtz (ex:1ps, 500fs, 3ps)
-#       3. dark.pdb
-#       4. refine.mtz
+#       1. dark.mtz                       # COLUMNS H,K,L,F,SIGF required
+#       2. light.mtz (ex:1ps, 500fs, 3ps) # COLUMNS H,K,L,F,SIGF required 
+#       3. dark.pdb                       #
+#       4. refine.mtz                     # PHASES from the 6th coloumn will be used for FFT 
 #       where the DEDmap.py is copied.
 #      ./DEDmap.py timepoint
 ##ex:  ./DEDmap.py 1ps
@@ -65,7 +73,6 @@ mtzv = (
 subprocess.Popen(mtzv,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
 f2mtz_DED = "f2mtz_DED.txt"
-
 with open(f2mtz_DED, "w") as f:
     f.write(f"CELL {a} {b} {c} {alpha} {beta} {gamma}\n")
     f.write(f"SYMM {spacegroup_symmetry}\n")
@@ -311,7 +318,7 @@ subprocess.Popen(fft_weight,shell=True, stdout=subprocess.PIPE,stderr=subprocess
 
 
 mapmask = (
-    f"mapmask mapin {timepoint}_wd.map mapout {timepoint}.map xyzin ../dark.pdb << eof > mapmask.log \n"
+    f"mapmask mapin {timepoint}_wd.map mapout {timepoint}.map xyzin ../{dark_model} << eof > mapmask.log \n"
     f"extend xtal \n"
     f"border 0.0 \n"
     f"END"
