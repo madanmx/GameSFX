@@ -124,7 +124,7 @@ The programs in GameSFX are published under the GNU General Public License v3.0.
 
 see http://www.gnu.org/licenses/ for more information.
 
-# Acknowledments
+# Acknowledgments
 Sebastian Westenhoff for sharing the 1ps data from https://doi.org/10.7554/eLife.53514 and for providing postdoctoral scholarship.
 
 # Contact
