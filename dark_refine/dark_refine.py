@@ -6,7 +6,10 @@
 #   Version Sunday 9th July 2023 23:00 CEST                 #  
 #           Monday 10th July 2023 02:30 IST                 #
 #############################################################
-
+# This DED.py is a difference map calculator based on       #
+# the idea published here:                                  #
+# https://doi.org/10.1038/s41592-019-0628-z                 #
+#############################################################
 
 import sys
 import os
