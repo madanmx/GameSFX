@@ -4,6 +4,8 @@ A set of python utilities for serial femtosecond crystallography data analysis. 
 Take home message: Classical interactive computing with less mousing and more keyboarding!!!
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
+The 1ps data used for the demo purpose is from the https://doi.org/10.7554/eLife.53514
+
 ### Install GameSFX
 git clone git@github.com:madanmx/GameSFX.git \
 or                                                     \
@@ -121,6 +123,9 @@ Work in Progess!!
 The programs in GameSFX are published under the GNU General Public License v3.0. Please do take responsibility to install all the relevant pacakges (CCP4 and coot) to work with the GameSFX.
 
 see http://www.gnu.org/licenses/ for more information.
+
+# Acknowledments
+Sebastian Westenhoff for sharing the 1ps data from https://doi.org/10.7554/eLife.53514 and for providing postdoctoral scholarship.
 
 # Contact
 Madan Kumar Shankar - madan.shankar@kemi.uu.se
