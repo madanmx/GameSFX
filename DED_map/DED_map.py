@@ -22,12 +22,47 @@
 # In this program, The MEAN of SQUARES/MEAN SQUARES will be # 
 # used rather SQUARE of the MEAN of the ABSOLUTE values     # 
 # (ex. <|F|**2>                                             # 
-# Structure factors will bw normalized by the mean weight   #
+# F is the amplitude of the structure facotr                #
+# SIG(F) is the standard deviation of the amplitude of      #
+# structure factor                                          # 
+# <F**2> is the mean square of the amplitude of the         #
+# factor calculated over all matching HKLs between light    # 
+# and dark reflection files.                                #
+# <SIG(F)**2> is the squared mean of the standard deviation # 
+# of the amplitude of the structure factor calculated over  #
+# all matching HKLs between light and dark reflection files.# 
+#                                                           #
+#Structure factors will bw normalized by the mean weight    #
 # to preserve absolute scale of a weighted map.             #
 # Electron density of unweighted maps calculated by the     #
 # output of this program has to be divided by the           #    
 # mean weight to be on absolute scale                       # 
-#############################################################
+#===========================================================#                                                     
+#Some facts about MEAN SQUARE (MS) and SQUARED MEAN (SM)    #           
+# MS; Is the average of squared values, used to describe the#
+#variance of a set of data points. It is caclulated by      #
+#squaring each data point, calculating thier average, and   #
+# then taking the square root of that average.              #
+#             Sum(F)**2     F is the amplitude structure    #
+#  MS(F)   =  ----------    factor in the dataset.          #
+#                 n         n  is the number of data points #
+#============================================================
+#SM; Is caculated by finding the mean of the amplitude      #
+#values, then calculating the squared differences of each   # 
+#amplitude.                                                 #   
+#            Sum(F)                                         #
+# MEAN_F = -------------                                    #
+#               n                                           #
+#                                                           # 
+#      Sum(F - MEAN_F)**2                                   #
+# SM = -------------------                                  #
+#               n                                           #
+#Example F = [2.5, 3.1, 2.8, 3.5, 3.9] where n = 5          #
+# MS = 8.082                                                #
+# MEAN_F = 3.16                                             #
+# SM = 0.02417                                              #
+#============================================================
+
 
 import sys
 import os
@@ -210,7 +245,9 @@ FDARK[offset+f2['IH'], offset+f2['K' ], offset+f2['L' ], 1] = f2['SIGMA']
 light= len(f1)
 phase= len(f3)
 dark = len(f2)
-# Matching HKLs from light_scaled.hkl to dark_scaled.hkl.
+# Matching HKLs from light_scaled.hkl to dark_scaled.hkl
+#Calculate MEAN DIFFERENCE AMPLITUDE
+#Calculate the MEAN of the SUM of SIGMA1 and SIGMA2
 IC=    0
 DFSQ=  0.0
 S12SQ= 0.0
@@ -235,7 +272,7 @@ DFM=    DF/IC
 S12M=   S12/IC
 ADFM=   ADF/IC
 
-# DETERMINE MEAN WEIGHT TO PRESERVE ABSOLUTE SCALE
+# Determine the MEAN WEIGHT to preserve ABSOLUTE SCALE
 IO=     0
 WMEAN=  0
 WZMEAN= 0
