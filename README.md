@@ -4,8 +4,6 @@ A set of python utilities for serial femtosecond crystallography data analysis. 
 Take home message: Classical interactive computing with less mousing and more keyboarding!!!
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
-The map calculation is based on --Ren et al., 1999, Biochem. and this approach is similar to the --Elin et al., 2020, Elife and Pandey et al., Nat. Methods, 2021 \
-
 ### Install GameSFX
 git clone git@github.com:madanmx/GameSFX.git \
 or                                                     \
