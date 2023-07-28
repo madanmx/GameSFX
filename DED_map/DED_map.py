@@ -90,7 +90,6 @@ print(f'You entered {timepoint} for the generating DED map')
 dark_model = "dark.pdb"          #Set the dark.pdb here
 OFF = "dark.mtz"                 #Set the dark reflections here   
 F_model = "dark_phases.mtz"      #Set the refined dark phases here 
-#If the dark_phases (refine.mtz) is from phenix then uncomment at mtzv 
 ON = "timepoint.mtz"             #Set the light reflections here   
 #*****************************************************************
 
@@ -110,7 +109,6 @@ print(f'The maximum resolution and minimum resolution for DED maps are {max_res}
 
 mtzv = (
     f"mtz2various HKLIN ../{F_model} HKLOUT model_phs.hkl <<eof > mtz2various.log\n"
-#   f"LABIN FP=F-model PHIC=PHIF-model \n"  # Uncomment this line if the dark_phases.mtz file is from phenix refinement
     f"LABIN FP=FC_ALL PHIC=PHIC_DARK \n"
     f"OUTPUT USER '(3I5,F12.3,' 1.00 ',F12.3)'\n"
     f"END"
