@@ -1,2 +1,1 @@
-If the dark_phases are from phenix refinement, uncomment the line at mtzv in the DED_map.py
-Then comment the line 
+If the dark_phases are from phenix refinement, use the DED_map_phenix.py
