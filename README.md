@@ -116,7 +116,7 @@ command-prompt$DED_map.py 1ps     #Enter all the values required by this code to
 Open the coot, load the dark.pdb and 1ps.map to see the difference electron density features.
 
 
-# Many programs for the SFX data (Part 2, Part 3....)
+# Many programs for the SFX data (Part 2; Extraplated maps, Part 3: Pearson Correlation coefficent....)
 Work in Progess!!
 
 # License
