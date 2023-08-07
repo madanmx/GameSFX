@@ -126,7 +126,7 @@ see http://www.gnu.org/licenses/ for more information.
 
 # Acknowledgments
 Sebastian Westenhoff for sharing the 1ps data from https://doi.org/10.7554/eLife.53514 and for providing postdoctoral scholarship.
-Foundation Längmanska kulturfonden for providing research grant (Ansökan BA23-0489).
+
 
 # Contact
 Madan Kumar Shankar - madan.shankar@kemi.uu.se
