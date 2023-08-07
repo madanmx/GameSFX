@@ -352,7 +352,7 @@ f2m_weight = (
 subprocess.Popen(f2m_weight,shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
 fft_weight = (
-    f"fft HKLIN {timepoint}_dwt.mtz MAPOUT {timepoint}_DED_unitcell.map << eof > fft_weight.log \n "
+    f"fft HKLIN {timepoint}_dwt.mtz MAPOUT {timepoint}_unitcell.map << eof > fft_weight.log \n "
     f"RESO {min_res}  {max_res} \n"
     f"GRID SAMPLE 3 \n"
     f"BINMAPOUT \n"
@@ -363,14 +363,14 @@ subprocess.Popen(fft_weight,shell=True, stdout=subprocess.PIPE,stderr=subprocess
 
 
 mapmask = (
-    f"mapmask mapin {timepoint}_wd.map mapout {timepoint}_DED_asymmetricunit.map xyzin ../{dark_model} << eof > mapmask.log \n"
+    f"mapmask mapin {timepoint}_unitcell.map mapout {timepoint}_DED_asymmetricunit.map xyzin ../{dark_model} << eof > mapmask.log \n"
     f"extend xtal \n"
     f"border 0.0 \n"
     f"END"
     )
 subprocess.Popen(mapmask,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE).wait()
 
-print(f'Now the DED map: {timepoint}.map, ready!!!')
+print(f'Now the DED map: {timepoint}_DED_asymmetricunit.map, ready!!!')
 
 
 
