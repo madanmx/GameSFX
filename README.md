@@ -60,7 +60,7 @@ command-prompt$vi dark_crystfel.hkl                          #edit the dark_crys
   29    1    2      18.66        -      46.57       2                 \     
   End of reflections                                                  \
   
-In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chractercters exist) and save it as dark_start.hkl. NOTE: Make sure there is "NO" empty line in the starting of the file for example the first line should start with the  0    0    4   30476.13        -   10561.76      15 as in the above example  \
+In the editor, delete the first three lines and the last line in dark_crystfel.hkl file (make sure no chracters exist) and save it as dark_start.hkl. NOTE: Make sure there is "NO" empty line in the starting of the file for example the first line should start with the  0    0    4   30476.13        -   10561.76      15 as in the above example  \
 command-prompt$ls                                            #list the files  \
 dark.py                                                                       \
 dark_crystfel.hkl                                                             \
@@ -130,6 +130,7 @@ The programs in GameSFX are published under the GNU General Public License v3.0.
 see http://www.gnu.org/licenses/ for more information.
 
 # Acknowledgments
+Research grant (Grant No. BA23-0489), Stiftelsen Längmanska kulturfonden, Stockholm, Sweden, 2023-2025. 
 The 1ps data is based from https://doi.org/10.7554/eLife.53514.
 
 
