@@ -1,14 +1,12 @@
-# GameSFX "Data analyis for dummies"
+# GameSFX "Serial Femtosecond Crystallography Data analyis for dummies"
 A set of python utilities for serial femtosecond crystallography data analysis. The required tools are Python, editors (whatever the editor you like!!) and CCP4/Phenix. For map visualization "coot". 
 
-Take home message: Classical interactive computing with less mousing and more keyboarding!!!
-
+Take home message: Classical interactive computing with less mousing (clicking) and more keyboarding a.k.a out of the balck box training!!!
 
 A XFEL data analysis tutorial using Python programs
 
 Abstract
-
-This tutorial is based on the reported literatiure. (Pandey et al., 2020) The direct hkl files (dark and light) from the CrystFEL will be prepared to convert intensities to structure factors (my scripts). Then this file will be used to prepare difference electron density (DED) maps which are based on the Bayesian statistical analysis and are called Q-weighed electron difference density maps. (Ursby and Bourgeios; Terwilliger and Berendzen). Further, the extrapolated maps will be generated to refine the light activated model. Then the refined light model will be used to generate the calculated DED map. Finally, the map-to-map correlation (local region not whole map) using Pearson Correlation Coefficient (PCC) will be used to compare the region of excitation between the observed and calculated maps. 
+This tutorial is based on the reported literatiure. (Ren et. al, 2001 and Pandey et al., 2020) The direct hkl files (dark and light) from the CrystFEL will be prepared to convert intensities to structure factors (my scripts). Then this file will be used to prepare difference electron density (DED) maps which are based on the Bayesian statistical analysis and are called Q-weighed electron difference density maps. (Ursby and Bourgeios; Terwilliger and Berendzen). Further, the extrapolated maps will be generated to refine the light activated model. Then the refined light model will be used to generate the calculated DED map. Finally, the map-to-map correlation (local region not whole map) using Pearson Correlation Coefficient (PCC) will be used to compare the region of excitation between the observed and calculated maps. 
 
 ## Part 1: Beamtime maps: Difference electron density map plotting using python programs.
 The 1ps data used for the demo purpose is from the https://doi.org/10.7554/eLife.53514
