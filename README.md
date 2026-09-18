@@ -1,5 +1,5 @@
 # GameSFX "Serial Femtosecond Crystallography Data analyis for dummies"
-A set of python utilities for serial femtosecond crystallography data analysis. The required tools are Python, editors (whatever the editor you like!!) and CCP4/Phenix. For map visualization "coot". 
+A set of python utilities for serial femtosecond crystallography data analysis. The required tools are Python, editors (whatever the editor you like!!) and CCP4 and Phenix. For map visualization "coot". 
 
 Take home message: Classical interactive computing with less mousing (clicking) and more keyboarding a.k.a out of the balck box training!!!
 
